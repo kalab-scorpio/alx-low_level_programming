@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S $CFILE > $CFILE | tr .c .o
+gcc -S -Wall -Werror -Wextra -pedantic -std=gnu89 $CFILE > $CFILE | tr .c .o
