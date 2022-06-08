@@ -2,16 +2,13 @@
 
 /**
  * _isalpha - print 1 if it is a letter and 0 otherwise
- * Retutrn: 0 or 1 if it works correctly
+ * @c: variable for accepting char 
+ * Return: 0 or 1 if it works correctly
  */
 
 int _isalpha(int c)
 {
-	int i;
-
-	i = _isalpha('c');
-	if (i != 0)
-		_putchar('1');
-	else
-		_putchar('0');
+	if (c >= 65 && c <= 90 || c <= 122 && c >= 97)
+		return (1);
+	return (0);
 }
