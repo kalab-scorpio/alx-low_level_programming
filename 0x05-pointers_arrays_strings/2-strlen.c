@@ -6,5 +6,6 @@
 
 int _strlen(char *s)
 {
-	return size s;
+	unsigned long len = sizeof(s);
+	return len;
 }
