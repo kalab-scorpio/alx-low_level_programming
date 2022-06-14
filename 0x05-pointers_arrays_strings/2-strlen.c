@@ -3,8 +3,9 @@
  * Return: the length of the char array
  * @s: the char array
  */
+#include<string.h>
 
 int _strlen(char *s)
 {
-	return sizeof s;
+	return strlen(s);
 }
