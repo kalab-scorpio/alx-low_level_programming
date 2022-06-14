@@ -1,2 +1,3 @@
 /**
- * _puts - 
+ * _puts - prints arrays
+ * @
