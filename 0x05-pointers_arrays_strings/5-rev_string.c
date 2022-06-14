@@ -10,5 +10,5 @@ void rev_string(char *s)
 	int j = (int)strlen(tem) - 1, i = j;
 
 	for(; i >= 0; i--)
-		s[ - (i - j)] = tem[i];
+		s[j - i] = tem[i];
 }
