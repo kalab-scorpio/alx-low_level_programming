@@ -6,6 +6,8 @@
 
 void _puts(char *str)
 {
-	for (int i = 0; i < strlen(str); i++)
-		_putchar(putstr[0]);
+	int i;
+
+	for (i = 0; i < (int)strlen(str); i++)
+		_putchar(str[0]);
 }
