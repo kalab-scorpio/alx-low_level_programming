@@ -6,5 +6,9 @@
 
 void rev_string(char *s)
 {
-	strrev(*s);
+	char tem = *s;
+	int j = (int)strlen(tem) - 1, i = j;
+
+	for(; i >= 0; i--)
+		s[i - j] = tem[i];
 }
