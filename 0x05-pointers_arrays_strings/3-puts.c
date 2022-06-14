@@ -3,6 +3,7 @@
  * @str: the array of chars
  */
 #include<string.h>
+#include "main.h"
 
 void _puts(char *str)
 {
