@@ -2,7 +2,7 @@
  * _puts - prints arrays
  * @str: the array of chars
  */
-#include<string>
+#include<string.h>
 
 void _puts(char *str)
 {
