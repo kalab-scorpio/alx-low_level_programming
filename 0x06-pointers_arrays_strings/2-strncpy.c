@@ -1,6 +1,6 @@
 /**
  * _strncpy - function that copies src to dest
- * @src: source of the string 
+ * @src: source of the string
  * @dest: the destination of the string
  * @n: the amount of src to be copied to the dest
  * Return: char array the copied string
