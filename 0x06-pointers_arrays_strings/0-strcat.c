@@ -2,6 +2,7 @@
  * _strcat - string concatination
  * @dest: array of string for concatination
  * @src: source of string for concatination
+ * Return: it returns char array of the dest + src
  */
 #include<string.h>
 
