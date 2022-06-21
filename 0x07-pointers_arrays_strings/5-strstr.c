@@ -1,8 +1,8 @@
 /**
- * _strstr - 
- * @haystack:
- * @needle:
- * Return:
+ * _strstr - finds the occurrence of substring needle in haystack
+ * @haystack: the main string 
+ * @needle: the string to search for in haystack
+ * Return: pointer to the beginning of the located substring or NULL if not found
  */
 #include<string.h>
 
