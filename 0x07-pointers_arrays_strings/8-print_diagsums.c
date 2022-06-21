@@ -18,6 +18,6 @@ void print_diagsums(int *a, int size)
 				sum2 += a[row][col];
 		}
 	}
-	printf("%d, %d", sum, sum2)
+	printf("%d, %d", sum, sum2);
 }
 
