@@ -14,7 +14,7 @@ void print_diagsums(int *a, int size)
 		{
 			if (row == col)
 				sum += a[row][col];
-			else if (row + col = size)
+			else if (row + col == size)
 				sum2 += a[row][col];
 		}
 	}
