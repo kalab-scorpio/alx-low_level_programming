@@ -3,8 +3,9 @@
  * @s: char array 
  * Return: returns the length of s
  */
+#include <string.h>
 
 int _strlen_recursion(char *s) 
 {
-	return (sizeof *s);
+	return (strlen(*s));
 }
