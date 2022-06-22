@@ -4,10 +4,10 @@
  */
 #include "main.h"
 
+int i = 0;
+
 void _puts_recursion(char *s)
 {
-	static int i = 0;
-
 	if(s[i] == '\0')
 		return;
 	_putchar(s[i]);
