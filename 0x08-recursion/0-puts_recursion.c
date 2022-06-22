@@ -4,7 +4,7 @@
  */
 #include "main.h"
 
-int i = 0;
+#define i  0;
 
 void _puts_recursion(char *s)
 {
