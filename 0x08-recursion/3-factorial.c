@@ -14,4 +14,5 @@ int factorial(int n)
 		if(f >= 0)
     			return n*f;
 	}
+	return 1;
 }
