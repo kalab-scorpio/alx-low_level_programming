@@ -6,13 +6,15 @@
 
 int factorial(int n)
 {
-	int f = factorial(n-1);
-
 	if (n < 0)
 		return (-1);
 
-	else if (f >= 0)
-		return (n * f);
+	else
+	{
+		int f = factorial(n - 1);
 
+		if (f >= 0)
+			return (n * f);
+	}
 	return (1);
 }
