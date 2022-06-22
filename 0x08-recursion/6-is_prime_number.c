@@ -1,6 +1,6 @@
 /**
  * is_prime_number - checks if a number is prime or not
- * @n: the number to be checked 
+ * @n: the number to be checked
  * Return: 1 if prime 0 if otherwise
  */
 
