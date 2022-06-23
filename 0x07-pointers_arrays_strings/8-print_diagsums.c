@@ -3,6 +3,7 @@
  * @a: the array that holds the square matrix
  * @size: the size of the square matrix
  */
+#include <stdio.h>
 
 void print_diagsums(int *a, int size)
 {
@@ -13,11 +14,12 @@ void print_diagsums(int *a, int size)
 		for (col = 0; col < size; col++) 
 		{
 			if (row == col)
-				sum += a[row][col];
-			else if (row + col == size)
-				sum2 += a[row][col];
+				printf("a[%d][%d] = %d\n", row, col, *(*(a + row) + col) );
+			sum = sum + sum2;
+			/*else if (row + col == size)
+				sum2 += *(*(a + row) + col);*/
 		}
 	}
-	printf("%d, %d", sum, sum2);
+	/*printf("%d, %d", sum, sum2);*/
 }
 
