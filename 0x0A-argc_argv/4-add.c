@@ -11,12 +11,7 @@ int main(int argc, char *argv[])
 {
 	int i = 1, sum = 0;
 
-	if (argc > 1)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	else if (argc == 1)
+	if (argc == 1)
 		printf("%d\n", 0);
 	else
 	{
