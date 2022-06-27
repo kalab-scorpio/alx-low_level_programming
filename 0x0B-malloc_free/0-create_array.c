@@ -9,7 +9,11 @@
 char *create_array(unsigned int size, char c)
 {
 	char *buffer = malloc(size);
+	int i = 0;
 	
-	buffer[0] = c;
+	if (buffer == NULL)
+		return (NULL);
+	for(; i < size; i++)
+		buffer[i] = c;
 	return (buffer);
 }
