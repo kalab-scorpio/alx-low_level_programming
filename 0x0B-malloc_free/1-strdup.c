@@ -12,6 +12,6 @@ char *_strdup(char *str)
 	
 	if (str == NULL || buffer == NULL)
 		return (NULL);
-	buffer = str;
+	*buffer = *str;
 	return buffer;
 }
