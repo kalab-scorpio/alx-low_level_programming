@@ -13,7 +13,7 @@ char *_strdup(char *str)
 
 	if (str == NULL || buffer == NULL)
 		return (NULL);
-	for (; i < strlen(str); i++
+	for (; i < strlen(str); i++)
 		buffer[i] = str[i];
 	return buffer;
 }
