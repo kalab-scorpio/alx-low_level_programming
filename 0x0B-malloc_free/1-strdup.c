@@ -9,7 +9,8 @@
 char *_strdup(char *str)
 {
 	char *buffer = malloc(strlen(str) + 1);
-	
+	int i = 0;	
+
 	if (str == NULL || buffer == NULL)
 		return (NULL);
 	for (; i < strlen(str); i++
