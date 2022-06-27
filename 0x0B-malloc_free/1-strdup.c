@@ -8,10 +8,11 @@
 
 char *_strdup(char *str)
 {
-	char *buffer = malloc(strlen(str));
+	char *buffer = malloc(strlen(str) + 1);
 	
 	if (str == NULL || buffer == NULL)
 		return (NULL);
-	*buffer = *str;
+	for (; i < strlen(str); i++
+		buffer[i] = str[i];
 	return buffer;
 }
