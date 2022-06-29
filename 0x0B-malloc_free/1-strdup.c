@@ -10,12 +10,15 @@ char *_strdup(char *str)
 {
 	char *buffer = malloc(strlen(str) + 1);
 	long unsigned int i = 0;	
-
-	if (str == nullptr)
-	       return (NULL);	
+	
 	if (buffer == NULL)
 		return (NULL);
-	for (; i < strlen(str); i++)
-		buffer[i] = str[i];
+	if (str != NULL) 
+	{
+		for (; i < strlen(str); i++)
+			buffer[i] = str[i];
+	}
+	else
+		return (NULL);
 	return buffer;
 }
