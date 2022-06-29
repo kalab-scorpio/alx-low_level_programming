@@ -3,13 +3,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *buffer;
 	unsigned long int i = 0;
-
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
-
-	buffer = malloc(strlen(s1) + strlen(s2) + 1);
+	char *buffer = malloc(strlen(s1) + strlen(s2) + 1);
 
 	if (buffer == NULL)
 		return (NULL);
