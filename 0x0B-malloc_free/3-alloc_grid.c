@@ -13,8 +13,8 @@ int **alloc_grid(int width, int height)
 	int *ptr = (int *)(arr + height);
 	int i = 0;
 
-	for(; i < r; i++)
-        	arr[i] = (ptr + c * i);
+	for(; i < height; i++)
+        	arr[i] = (ptr + width * i);
 
 	if (arr == NULL)
 	{
