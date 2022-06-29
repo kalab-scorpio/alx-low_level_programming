@@ -4,7 +4,15 @@
 char *str_concat(char *s1, char *s2)
 {
 	unsigned long int i = 0;
-	char *buffer = malloc(strlen(s1) + strlen(s2) + 1);
+	char *buffer;
+	int s1_len = 0, s2_len = 0;
+
+	if (s1 != NULL)
+		s1_len = strlen(s1);
+	if (s2 != NULL)
+		s2_len = strlen(s2);
+
+	buffer = malloc(strlen(s1) + strlen(s2) + 1);
 
 	if (buffer == NULL)
 		return (NULL);
