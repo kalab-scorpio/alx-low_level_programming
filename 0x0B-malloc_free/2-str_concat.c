@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 		if (i < strlen(s1))
 			buffer[i] = s1[i];
 		else 
-			buffer[i] = s2[i];
+			buffer[i] = s2[i - strlen(s1)];
 	}
 	return (buffer);
 }
