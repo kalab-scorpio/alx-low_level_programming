@@ -12,17 +12,17 @@ char *str_concat(char *s1, char *s2)
 	if (s2 != NULL)
 		s2_len = strlen(s2);
 
-	buffer = malloc(strlen(s1) + strlen(s2) + 1);
+	buffer = malloc(s1_len + s2_len + 1);
 
 	if (buffer == NULL)
 		return (NULL);
 
-	for (; i < (strlen(s1) + strlen(s2)); i++)
+	for (; i < (s1_len + s2_len); i++)
 	{
-		if (i < strlen(s1))
+		if (i < s1_len)
 			buffer[i] = s1[i];
 		else 
-			buffer[i] = s2[i - strlen(s1)];
+			buffer[i] = s2[i - s1_len];
 	}
 	return (buffer);
 }
