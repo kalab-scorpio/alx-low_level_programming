@@ -3,9 +3,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned long int i = 0;
 	char *buffer;
-	int s1_len = 0, s2_len = 0;
+	unsigned long int i = 0, s1_len = 0, s2_len = 0;
 
 	if (s1 != NULL)
 		s1_len = strlen(s1);
