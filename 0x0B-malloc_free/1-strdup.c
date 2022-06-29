@@ -9,9 +9,9 @@
 char *_strdup(char *str)
 {
 	char *buffer;
-	long unsigned int i = 0;	
-	
-	if( str == NULL)
+	unsigned long int i = 0;
+
+	if (str == NULL)
 		return (NULL);
 
 	buffer = malloc(strlen(str) + 1);
@@ -22,5 +22,5 @@ char *_strdup(char *str)
 	for (; i < strlen(str); i++)
 		buffer[i] = str[i];
 
-	return buffer;
+	return (buffer);
 }
