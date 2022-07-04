@@ -5,6 +5,7 @@
  * @age: age of the dog
  * @owner: owner of the dog
  */
+#include "dog.h"
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
