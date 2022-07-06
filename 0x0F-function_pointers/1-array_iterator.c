@@ -1,7 +1,6 @@
-#include "function_pointers.h"
 #include <stdlib.h>
-#include <stddef.h>
-#include <stdint.h>
+#include "function_pointers.h"
+
 /**
  * array_iterator - iterates an array
  * @array: is an array
