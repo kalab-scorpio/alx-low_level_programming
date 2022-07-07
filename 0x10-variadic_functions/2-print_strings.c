@@ -18,8 +18,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	else
 		var = (char *) separator;
 	va_start(args, n);
-
-	printf("%s", va_arg(args, char *));
+	
+	if (n > 0)
+		printf("%s", va_arg(args, char *));
 	for (i = 1; i < n; i++)
 	{
 		ptr = va_arg(args, char*);
