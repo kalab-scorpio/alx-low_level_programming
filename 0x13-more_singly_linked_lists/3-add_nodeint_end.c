@@ -8,7 +8,7 @@
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *node, *last = *head;
+	listint_t *node, *last;
 
 	if (!head)
 		return (0);
@@ -19,7 +19,15 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	node->n = n;
 	node->next = 0;
 
-	while (last->next);
+	last = *head;
+	if (!last)
+	{
+		*head = node;
+		return (node);
+	}
+
+	while (last->next)
+		last = last->next;
 	last->next = node;
 	return (node);
 }
